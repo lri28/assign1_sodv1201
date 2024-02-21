@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leona's Website</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="grade.html">Grade Converter</a>
+            <a href="hr.html">Staff Information</a>
+            <a href="converter.html">Weather</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container conv">
+            <input type="text" id="ValueToConvert" placeholder="Enter value to convert..." class="input-text">
+            <button class="convertbtn conv-btn" onclick="ConvertTemperature('ToCelsius')">°F to °C</button>
+            <button class="convertbtn conv-btn" onclick="ConvertTemperature('ToKelvin')">°C to K</button>
+            <button class="convertbtn conv-btn" onclick="Reset()">Reset</button>
+            <p id="convertmsg" class="msg"></p>
+        </div>
+    </main>
+    <footer id="footer">
+        &copy; <span id="currentYear"></span> Leona Ilao. All rights reserved.
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

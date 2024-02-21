@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leona's Website</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="grade.html">Grade Converter</a>
+            <a href="hr.html">Staff Information</a>
+            <a href="converter.html">Weather</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div class="sort-button-container">
+                <button onclick="SortTable('name')">Sort by Name</button>
+                <button onclick="SortTable('salary')">Sort by Salary</button>
+            </div>
+            <table id="employeeTable">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Location</th>
+                    <th>Date Hired</th>
+                    <th>Salary</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer id="footer">
+        &copy; <span id="currentYear"></span> Leona Ilao. All rights reserved.
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
